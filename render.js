@@ -78,9 +78,8 @@ function getTodayGame(size) {
 
 var date = document.getElementById('date-display'), pgames = getTodayGame(2);
 var datestring = '今天是' + today.getFullYear() + '年' + (today.getMonth() + 1) + '月' + today.getDate() + '日';
-var gamestring = '适合打' + pgames[0] + '和' + pgames[1];
 
 while (date.firstChild) 
 	date.removeChild(date.firstChild);
-date.appendChild(document.createTextNode(datestring + ', ' + gamestring));
+date.appendChild(document.createTextNode(datestring + ', '));
 
